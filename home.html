@@ -4,17 +4,36 @@
 		<title>Marvel Fandom</title>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link type="text/css" rel="stylesheet" href="css\file.css" media="all"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css\file.css" media="all"/>
+
 	</head>
 	<body >
+			<body >
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="heroes.html">Heroes</a>
+  <a href="vilains.html">Vilains</a>
+  <a href="timeline.html">TimeLine</a>
+  <a href="comingsoon.html">Coming Soon</a>
+  <a href="comicbooks.html">Comic Books</a>
+  <a href="quizz.html">Quizz</a>
+  <a href="contactus.html">Contact Us</a>
+</div>
 		<header id="headerid" >
 			<div id="banner">
+				
 				<div id="logo">
-					<img height="170em" width="170em" src="image\logo1.svg"/>
+					
+					<img  src="image\logo1.svg"/>
+					<div class="sidebtn"><button type="button" class="btn btn-danger sidebtninner" onclick="openNav()"><i class="fas fa-bars"></i></button></div>
 				</div>
-				<div>
+				
+				<div id="slogan">
 					<div>
 					<p><i>
 					&#34;Heroes are made by the path they choose,</i></p></div>
@@ -24,7 +43,7 @@
 			</div>		
 		</header>
 		<div>
-			<ul id="menu">
+			<ul  data-spy="affix" data-offset-top="130" id="menu">
 				<li title="Home">
 					<a href="home.html"><i class="fas fa-home"></i></a>			
 				</li>		
@@ -53,8 +72,8 @@
 					<a href="contactus.html"><i class="fas fa-envelope"></i></a>			
 				</li>
 			</ul>
-		</div>	
-		<div class="content">
+		</div>
+		<div class="container container_add">
 			<h1 style="text-align:center">WELCOME!</h1>
 			<br/>
 			<div class="text-box">
@@ -81,4 +100,14 @@ Before leaving don't forget to leave us your opinion,good or bad(we can take it)
 		</footer>      
 		
 	</body>
+		
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </html>

@@ -4,17 +4,36 @@
 		<title>Marvel Fandom</title>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link type="text/css" rel="stylesheet" href="css\file.css" media="all"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css\file.css" media="all"/>
+
 	</head>
 	<body >
+			<body >
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="heroes.html">Heroes</a>
+  <a href="vilains.html">Vilains</a>
+  <a href="timeline.html">TimeLine</a>
+  <a href="comingsoon.html">Coming Soon</a>
+  <a href="comicbooks.html">Comic Books</a>
+  <a href="quizz.html">Quizz</a>
+  <a href="contactus.html">Contact Us</a>
+</div>
 		<header id="headerid" >
 			<div id="banner">
+				
 				<div id="logo">
-					<img height="170em" width="170em" src="image\logo1.svg"/>
+					
+					<img  src="image\logo1.svg"/>
+					<div class="sidebtn"><button type="button" class="btn btn-danger sidebtninner" onclick="openNav()"><i class="fas fa-bars"></i></button></div>
 				</div>
-				<div>
+				
+				<div id="slogan">
 					<div>
 					<p><i>
 					&#34;Heroes are made by the path they choose,</i></p></div>
@@ -23,8 +42,7 @@
 				</div>
 			</div>		
 		</header>
-		<div>
-			<ul id="menu">
+			<ul  data-spy="affix" data-offset-top="130" id="menu">
 				<li title="Home">
 					<a href="home.html"><i class="fas fa-home"></i></a>			
 				</li>		
@@ -53,11 +71,14 @@
 					<a href="contactus.html"><i class="fas fa-envelope"></i></a>			
 				</li>
 			</ul>
-		</div>	
-		<div class="content">
+		</div>
+		<div class="container container_add">
 			<h1>The Heroes Page</h1>
+			<br/>
 			<div class="text-box">
-				Here you'll find the saviours of the Marvel Universe. Either saved a single street or the whole universe, they earned their place in this section.We'll talk about some of the most important heroes in the Marvel Cinematic Universe, Netflix series, X-Men, and some others that may apear on the big screens anytime soon.
+				<p>
+					Here you'll find the saviours of the Marvel Universe. Either saved a single street or the whole universe, they earned their place in this section.We'll talk about some of the most important heroes in the Marvel Cinematic Universe, Netflix series, X-Men, and some others that may apear on the big screens anytime soon.
+ 				</p>			
 			</div>
 			<div>
 				<button class="tablink" onclick="openPage('MCU', this, 'red')" id="defaultOpen">MCU</button>
@@ -65,139 +86,77 @@
 				<button class="tablink" onclick="openPage('X-Men', this, 'red')">X-Men</button>
 				<button class="tablink" onclick="openPage('Others', this, 'red')">Others</button>
 				<div id="MCU" class="tabcontent">
-					<div class="character">
+				<div class="row">
+					<div class="character col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<h2>Captain America</h2>
 						<div class="photo"><img src="image\captainamerica.jpg"/><br/><br/>
 							<label><b>Alter Ego:</b> Steven "Steve" Rogers</label>
 							<label><b>Abelities:</b> Peak human strength, speed, durability, agility, reflexes, senses, and mental processing, master martial artist and hand-to-hand combatant ,accelerated healing factor ,expert tactician, strategist, and field commander, wields vibranium-steel alloy shield</label>
 						</div>
-						<div class="description"><div class="text-box">Possim officiis et vix, doctus euripidis et est. Eu nominavi invidunt eos. Vix quas laboramus id. His et dolorem accusata ocurreret, pro graece mucius dolorem ad. In ius nullam periculis conceptam, no dolore fabulas vel, eos in justo phaedrum. No malis appareat explicari vel, scripta praesent suscipiantur cum in. Eos soleat aliquando in, quo audiam albucius liberavisse ei.
-Cu blandit pericula nec. Iuvaret gloriatur vim id, delicata salutandi hendrerit ius an. Id nam nulla nostro insolens, vis omnes primis ea. Quis dicta omnium usu ei. Velit singulis antiopam sit eu, id quo accusamus interpretaris. Eu cum eros iudico everti, ut veniam nonumy eam.
-Eu graece fastidii luptatum vix, no qui tempor nostrum lobortis, te percipit delicata est. Expetenda euripidis scriptorem te pro, facer iracundia definiebas eu vim. Eos cu epicuri copiosae moderatius. Vim convenire sadipscing no, mea an mutat essent percipitur, stet animal tractatos et sed. Mel ei nulla suscipit.
-Ius percipit indoctum ne, eam justo accommodare ei. Ex constituam liberavisse duo, mel harum aliquam dignissim at. Ut audire perpetua dissentiunt has, nam laudem indoctum ad, semper epicurei eu vis. Cum in nullam ubique, ut habemus vituperatoribus vis.
-Novum labore duo id, nam no nihil denique platonem. Et ullum habemus tractatos qui, possit euripidis pertinacia ut mel, his velit liber oportere ex. Nam splendide omittantur ut, dicat saepe dolore duo in. At iusto pertinacia his, id mei mutat idque dolor. Erat voluptatum voluptatibus duo ut. Ancillae repudiare usu at, usu platonem gubergren eu.
-Elitr constituto est ex. Mei torquatos posidonium eu, cu sed iusto ridens corpora, an eos aliquam laoreet repudiandae. Eu quot latine commodo vix. Duo corrumpit rationibus suscipiantur te. Inani persius in qui, an nec diam minim ludus, in essent mollis accusamus vel.
-Omnium perpetua adversarium ius in. Ut invidunt similique vulputate est. Ubique nusquam ponderum mea ea, dolores gloriatur abhorreant ut est. Ex nec phaedrum gubergren, vitae nostrum cotidieque eu est. Mel probatus volutpat at. Nulla postea at eam, aliquid sanctus praesent ad qui.
-Laudem electram vis ea, omnes ignota sanctus eam ne. Ex praesent efficiendi sit, sea dicit indoctum id. Cum timeam scriptorem cotidieque at. An cum mucius vocent, qui et dicta euripidis disputando, an has modo dicit ceteros. Posse graeco facilis in pri. Labitur expetenda cu his, vix ut vide omnium ornatus, sed eu sale iracundia intellegam.
-Clita nostro alienum has ei, cum probo probatus suavitate ei. Vim corpora iudicabit ea, ea ius libris scripta. Albucius sententiae definitiones his an. Id nec aperiam gloriatur, ad nec singulis deserunt. Eum at agam justo.
-Ei probo habemus dissentiunt nec, id graeco expetenda sed. His ea postulant convenire, te vel aliquid intellegat signiferumque. Ex ius novum iracundia conceptam. Altera gloriatur est at, has ex repudiandae intellegebat. Mei dico apeirian referrentur ex, vitae laboramus qui ad. Quidam voluptaria qui id.</div>
-					</div></div>
-					<div class="character">
+					</div>
+					<div class="character col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<h2>Iron-Man</h2>
 						<div class="photo"><img src="image\IronMan.png"/><br/><br/>
 							<label><b>Alter Ego:</b> Anthony Edward "Tony" Stark</label>
 							<label><b>Abelities:</b> Genius-level intellect, proficient scientist and engineer, powered armor suit:, superhuman strength and durability, supersonic flight, energy repulsor and missile projection, egenerative life support</label>
 						</div>
-						<div class="description"><div class="text-box">Possim officiis et vix, doctus euripidis et est. Eu nominavi invidunt eos. Vix quas laboramus id. His et dolorem accusata ocurreret, pro graece mucius dolorem ad. In ius nullam periculis conceptam, no dolore fabulas vel, eos in justo phaedrum. No malis appareat explicari vel, scripta praesent suscipiantur cum in. Eos soleat aliquando in, quo audiam albucius liberavisse ei.
-Cu blandit pericula nec. Iuvaret gloriatur vim id, delicata salutandi hendrerit ius an. Id nam nulla nostro insolens, vis omnes primis ea. Quis dicta omnium usu ei. Velit singulis antiopam sit eu, id quo accusamus interpretaris. Eu cum eros iudico everti, ut veniam nonumy eam.
-Eu graece fastidii luptatum vix, no qui tempor nostrum lobortis, te percipit delicata est. Expetenda euripidis scriptorem te pro, facer iracundia definiebas eu vim. Eos cu epicuri copiosae moderatius. Vim convenire sadipscing no, mea an mutat essent percipitur, stet animal tractatos et sed. Mel ei nulla suscipit.
-Ius percipit indoctum ne, eam justo accommodare ei. Ex constituam liberavisse duo, mel harum aliquam dignissim at. Ut audire perpetua dissentiunt has, nam laudem indoctum ad, semper epicurei eu vis. Cum in nullam ubique, ut habemus vituperatoribus vis.
-Novum labore duo id, nam no nihil denique platonem. Et ullum habemus tractatos qui, possit euripidis pertinacia ut mel, his velit liber oportere ex. Nam splendide omittantur ut, dicat saepe dolore duo in. At iusto pertinacia his, id mei mutat idque dolor. Erat voluptatum voluptatibus duo ut. Ancillae repudiare usu at, usu platonem gubergren eu.
-Elitr constituto est ex. Mei torquatos posidonium eu, cu sed iusto ridens corpora, an eos aliquam laoreet repudiandae. Eu quot latine commodo vix. Duo corrumpit rationibus suscipiantur te. Inani persius in qui, an nec diam minim ludus, in essent mollis accusamus vel.
-Omnium perpetua adversarium ius in. Ut invidunt similique vulputate est. Ubique nusquam ponderum mea ea, dolores gloriatur abhorreant ut est. Ex nec phaedrum gubergren, vitae nostrum cotidieque eu est. Mel probatus volutpat at. Nulla postea at eam, aliquid sanctus praesent ad qui.
-Laudem electram vis ea, omnes ignota sanctus eam ne. Ex praesent efficiendi sit, sea dicit indoctum id. Cum timeam scriptorem cotidieque at. An cum mucius vocent, qui et dicta euripidis disputando, an has modo dicit ceteros. Posse graeco facilis in pri. Labitur expetenda cu his, vix ut vide omnium ornatus, sed eu sale iracundia intellegam.
-Clita nostro alienum has ei, cum probo probatus suavitate ei. Vim corpora iudicabit ea, ea ius libris scripta. Albucius sententiae definitiones his an. Id nec aperiam gloriatur, ad nec singulis deserunt. Eum at agam justo.
-Ei probo habemus dissentiunt nec, id graeco expetenda sed. His ea postulant convenire, te vel aliquid intellegat signiferumque. Ex ius novum iracundia conceptam. Altera gloriatur est at, has ex repudiandae intellegebat. Mei dico apeirian referrentur ex, vitae laboramus qui ad. Quidam voluptaria qui id.</div>
-					</div></div>
+					</div>
 					
-					
+				</div>	
 				</div>
 
 				<div id="Netflix" class="tabcontent">
-					<div class="character">
+				<div class="row">
+					<div class="character col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<h2>Daredevil</h2>
 						<div class="photo"><img src="image\Daredevil.jpg"/><br/><br/>
 							<label><b>Alter Ego:</b> Matthew Michael Murdock</label>
 							<label><b>Abelities:</b> Superhuman senses, including radar sense, skilled hand-to-hand combatant, utilization of specially-designed club</label>
 						</div>
-						<div class="description"><div class="text-box">Possim officiis et vix, doctus euripidis et est. Eu nominavi invidunt eos. Vix quas laboramus id. His et dolorem accusata ocurreret, pro graece mucius dolorem ad. In ius nullam periculis conceptam, no dolore fabulas vel, eos in justo phaedrum. No malis appareat explicari vel, scripta praesent suscipiantur cum in. Eos soleat aliquando in, quo audiam albucius liberavisse ei.
-Cu blandit pericula nec. Iuvaret gloriatur vim id, delicata salutandi hendrerit ius an. Id nam nulla nostro insolens, vis omnes primis ea. Quis dicta omnium usu ei. Velit singulis antiopam sit eu, id quo accusamus interpretaris. Eu cum eros iudico everti, ut veniam nonumy eam.
-Eu graece fastidii luptatum vix, no qui tempor nostrum lobortis, te percipit delicata est. Expetenda euripidis scriptorem te pro, facer iracundia definiebas eu vim. Eos cu epicuri copiosae moderatius. Vim convenire sadipscing no, mea an mutat essent percipitur, stet animal tractatos et sed. Mel ei nulla suscipit.
-Ius percipit indoctum ne, eam justo accommodare ei. Ex constituam liberavisse duo, mel harum aliquam dignissim at. Ut audire perpetua dissentiunt has, nam laudem indoctum ad, semper epicurei eu vis. Cum in nullam ubique, ut habemus vituperatoribus vis.
-Novum labore duo id, nam no nihil denique platonem. Et ullum habemus tractatos qui, possit euripidis pertinacia ut mel, his velit liber oportere ex. Nam splendide omittantur ut, dicat saepe dolore duo in. At iusto pertinacia his, id mei mutat idque dolor. Erat voluptatum voluptatibus duo ut. Ancillae repudiare usu at, usu platonem gubergren eu.
-Elitr constituto est ex. Mei torquatos posidonium eu, cu sed iusto ridens corpora, an eos aliquam laoreet repudiandae. Eu quot latine commodo vix. Duo corrumpit rationibus suscipiantur te. Inani persius in qui, an nec diam minim ludus, in essent mollis accusamus vel.
-Omnium perpetua adversarium ius in. Ut invidunt similique vulputate est. Ubique nusquam ponderum mea ea, dolores gloriatur abhorreant ut est. Ex nec phaedrum gubergren, vitae nostrum cotidieque eu est. Mel probatus volutpat at. Nulla postea at eam, aliquid sanctus praesent ad qui.
-Laudem electram vis ea, omnes ignota sanctus eam ne. Ex praesent efficiendi sit, sea dicit indoctum id. Cum timeam scriptorem cotidieque at. An cum mucius vocent, qui et dicta euripidis disputando, an has modo dicit ceteros. Posse graeco facilis in pri. Labitur expetenda cu his, vix ut vide omnium ornatus, sed eu sale iracundia intellegam.
-Clita nostro alienum has ei, cum probo probatus suavitate ei. Vim corpora iudicabit ea, ea ius libris scripta. Albucius sententiae definitiones his an. Id nec aperiam gloriatur, ad nec singulis deserunt. Eum at agam justo.
-Ei probo habemus dissentiunt nec, id graeco expetenda sed. His ea postulant convenire, te vel aliquid intellegat signiferumque. Ex ius novum iracundia conceptam. Altera gloriatur est at, has ex repudiandae intellegebat. Mei dico apeirian referrentur ex, vitae laboramus qui ad. Quidam voluptaria qui id.</div>
-					</div></div>
+					</div>
+				</div>
 				</div>
 
 				<div id="X-Men" class="tabcontent">
-					<div class="character">
+				<div class="row">
+					<div class="character col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<h2>Proffessor X</h2>
 						<div class="photo"><img src="image\ProfessorX.jpg"/><br/><br/>
 							<label><b>Alter Ego:</b> Charles Francis Xavier</label>
 							<label><b>Abelities:</b> Genius level-intellect, one of the most powerful psychics in the Marvel Universe, with incredible ESP, telepathy, and mental-manipulation powersommander, wields vibranium-steel alloy shield</label>
 						</div>
-						<div class="description"><div class="text-box">Possim officiis et vix, doctus euripidis et est. Eu nominavi invidunt eos. Vix quas laboramus id. His et dolorem accusata ocurreret, pro graece mucius dolorem ad. In ius nullam periculis conceptam, no dolore fabulas vel, eos in justo phaedrum. No malis appareat explicari vel, scripta praesent suscipiantur cum in. Eos soleat aliquando in, quo audiam albucius liberavisse ei.
-Cu blandit pericula nec. Iuvaret gloriatur vim id, delicata salutandi hendrerit ius an. Id nam nulla nostro insolens, vis omnes primis ea. Quis dicta omnium usu ei. Velit singulis antiopam sit eu, id quo accusamus interpretaris. Eu cum eros iudico everti, ut veniam nonumy eam.
-Eu graece fastidii luptatum vix, no qui tempor nostrum lobortis, te percipit delicata est. Expetenda euripidis scriptorem te pro, facer iracundia definiebas eu vim. Eos cu epicuri copiosae moderatius. Vim convenire sadipscing no, mea an mutat essent percipitur, stet animal tractatos et sed. Mel ei nulla suscipit.
-Ius percipit indoctum ne, eam justo accommodare ei. Ex constituam liberavisse duo, mel harum aliquam dignissim at. Ut audire perpetua dissentiunt has, nam laudem indoctum ad, semper epicurei eu vis. Cum in nullam ubique, ut habemus vituperatoribus vis.
-Novum labore duo id, nam no nihil denique platonem. Et ullum habemus tractatos qui, possit euripidis pertinacia ut mel, his velit liber oportere ex. Nam splendide omittantur ut, dicat saepe dolore duo in. At iusto pertinacia his, id mei mutat idque dolor. Erat voluptatum voluptatibus duo ut. Ancillae repudiare usu at, usu platonem gubergren eu.
-Elitr constituto est ex. Mei torquatos posidonium eu, cu sed iusto ridens corpora, an eos aliquam laoreet repudiandae. Eu quot latine commodo vix. Duo corrumpit rationibus suscipiantur te. Inani persius in qui, an nec diam minim ludus, in essent mollis accusamus vel.
-Omnium perpetua adversarium ius in. Ut invidunt similique vulputate est. Ubique nusquam ponderum mea ea, dolores gloriatur abhorreant ut est. Ex nec phaedrum gubergren, vitae nostrum cotidieque eu est. Mel probatus volutpat at. Nulla postea at eam, aliquid sanctus praesent ad qui.
-Laudem electram vis ea, omnes ignota sanctus eam ne. Ex praesent efficiendi sit, sea dicit indoctum id. Cum timeam scriptorem cotidieque at. An cum mucius vocent, qui et dicta euripidis disputando, an has modo dicit ceteros. Posse graeco facilis in pri. Labitur expetenda cu his, vix ut vide omnium ornatus, sed eu sale iracundia intellegam.
-Clita nostro alienum has ei, cum probo probatus suavitate ei. Vim corpora iudicabit ea, ea ius libris scripta. Albucius sententiae definitiones his an. Id nec aperiam gloriatur, ad nec singulis deserunt. Eum at agam justo.
-Ei probo habemus dissentiunt nec, id graeco expetenda sed. His ea postulant convenire, te vel aliquid intellegat signiferumque. Ex ius novum iracundia conceptam. Altera gloriatur est at, has ex repudiandae intellegebat. Mei dico apeirian referrentur ex, vitae laboramus qui ad. Quidam voluptaria qui id.</div>
-					</div></div>
-					<div class="character">
+					</div>
+					<div class="character col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<h2>Magneto</h2>
 						<div class="photo"><img src="image\Magneto.png"/><br/><br/>
 							<label><b>Alter Ego:</b> Erik Lehnsherr</label>
 							<label><b>Abelities:</b> Magnetism manipulation and generation of magnetic force fields, flight through magnetic fields, helmet shields against telepathic attacks</label>
 						</div>
-						<div class="description"><div class="text-box">Possim officiis et vix, doctus euripidis et est. Eu nominavi invidunt eos. Vix quas laboramus id. His et dolorem accusata ocurreret, pro graece mucius dolorem ad. In ius nullam periculis conceptam, no dolore fabulas vel, eos in justo phaedrum. No malis appareat explicari vel, scripta praesent suscipiantur cum in. Eos soleat aliquando in, quo audiam albucius liberavisse ei.
-Cu blandit pericula nec. Iuvaret gloriatur vim id, delicata salutandi hendrerit ius an. Id nam nulla nostro insolens, vis omnes primis ea. Quis dicta omnium usu ei. Velit singulis antiopam sit eu, id quo accusamus interpretaris. Eu cum eros iudico everti, ut veniam nonumy eam.
-Eu graece fastidii luptatum vix, no qui tempor nostrum lobortis, te percipit delicata est. Expetenda euripidis scriptorem te pro, facer iracundia definiebas eu vim. Eos cu epicuri copiosae moderatius. Vim convenire sadipscing no, mea an mutat essent percipitur, stet animal tractatos et sed. Mel ei nulla suscipit.
-Ius percipit indoctum ne, eam justo accommodare ei. Ex constituam liberavisse duo, mel harum aliquam dignissim at. Ut audire perpetua dissentiunt has, nam laudem indoctum ad, semper epicurei eu vis. Cum in nullam ubique, ut habemus vituperatoribus vis.
-Novum labore duo id, nam no nihil denique platonem. Et ullum habemus tractatos qui, possit euripidis pertinacia ut mel, his velit liber oportere ex. Nam splendide omittantur ut, dicat saepe dolore duo in. At iusto pertinacia his, id mei mutat idque dolor. Erat voluptatum voluptatibus duo ut. Ancillae repudiare usu at, usu platonem gubergren eu.
-Elitr constituto est ex. Mei torquatos posidonium eu, cu sed iusto ridens corpora, an eos aliquam laoreet repudiandae. Eu quot latine commodo vix. Duo corrumpit rationibus suscipiantur te. Inani persius in qui, an nec diam minim ludus, in essent mollis accusamus vel.
-Omnium perpetua adversarium ius in. Ut invidunt similique vulputate est. Ubique nusquam ponderum mea ea, dolores gloriatur abhorreant ut est. Ex nec phaedrum gubergren, vitae nostrum cotidieque eu est. Mel probatus volutpat at. Nulla postea at eam, aliquid sanctus praesent ad qui.
-Laudem electram vis ea, omnes ignota sanctus eam ne. Ex praesent efficiendi sit, sea dicit indoctum id. Cum timeam scriptorem cotidieque at. An cum mucius vocent, qui et dicta euripidis disputando, an has modo dicit ceteros. Posse graeco facilis in pri. Labitur expetenda cu his, vix ut vide omnium ornatus, sed eu sale iracundia intellegam.
-Clita nostro alienum has ei, cum probo probatus suavitate ei. Vim corpora iudicabit ea, ea ius libris scripta. Albucius sententiae definitiones his an. Id nec aperiam gloriatur, ad nec singulis deserunt. Eum at agam justo.
-Ei probo habemus dissentiunt nec, id graeco expetenda sed. His ea postulant convenire, te vel aliquid intellegat signiferumque. Ex ius novum iracundia conceptam. Altera gloriatur est at, has ex repudiandae intellegebat. Mei dico apeirian referrentur ex, vitae laboramus qui ad. Quidam voluptaria qui id.</div>
-					</div></div>
-					<div class="character">
+					</div>
+					<div class="character col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<h2>Wolverine</h2>
 						<div class="photo"><img  src="image\Wolverine.jpg"/><br/><br/>
 							<label><b>Alter Ego:</b> Logan</label><br/>
 							<label><b>Abelities:</b> Superhuman senses, agility, reflexes, and animal-like attributes, extended longevity via regenerative healing factor, adamantium-plated skeleton, retractable bone claws, skilled hand-to-hand combatant</label>
 						</div>
-						<div class="description"><div class="text-box">Possim officiis et vix, doctus euripidis et est. Eu nominavi invidunt eos. Vix quas laboramus id. His et dolorem accusata ocurreret, pro graece mucius dolorem ad. In ius nullam periculis conceptam, no dolore fabulas vel, eos in justo phaedrum. No malis appareat explicari vel, scripta praesent suscipiantur cum in. Eos soleat aliquando in, quo audiam albucius liberavisse ei.
-Cu blandit pericula nec. Iuvaret gloriatur vim id, delicata salutandi hendrerit ius an. Id nam nulla nostro insolens, vis omnes primis ea. Quis dicta omnium usu ei. Velit singulis antiopam sit eu, id quo accusamus interpretaris. Eu cum eros iudico everti, ut veniam nonumy eam.
-Eu graece fastidii luptatum vix, no qui tempor nostrum lobortis, te percipit delicata est. Expetenda euripidis scriptorem te pro, facer iracundia definiebas eu vim. Eos cu epicuri copiosae moderatius. Vim convenire sadipscing no, mea an mutat essent percipitur, stet animal tractatos et sed. Mel ei nulla suscipit.
-Ius percipit indoctum ne, eam justo accommodare ei. Ex constituam liberavisse duo, mel harum aliquam dignissim at. Ut audire perpetua dissentiunt has, nam laudem indoctum ad, semper epicurei eu vis. Cum in nullam ubique, ut habemus vituperatoribus vis.
-Novum labore duo id, nam no nihil denique platonem. Et ullum habemus tractatos qui, possit euripidis pertinacia ut mel, his velit liber oportere ex. Nam splendide omittantur ut, dicat saepe dolore duo in. At iusto pertinacia his, id mei mutat idque dolor. Erat voluptatum voluptatibus duo ut. Ancillae repudiare usu at, usu platonem gubergren eu.
-Elitr constituto est ex. Mei torquatos posidonium eu, cu sed iusto ridens corpora, an eos aliquam laoreet repudiandae. Eu quot latine commodo vix. Duo corrumpit rationibus suscipiantur te. Inani persius in qui, an nec diam minim ludus, in essent mollis accusamus vel.
-Omnium perpetua adversarium ius in. Ut invidunt similique vulputate est. Ubique nusquam ponderum mea ea, dolores gloriatur abhorreant ut est. Ex nec phaedrum gubergren, vitae nostrum cotidieque eu est. Mel probatus volutpat at. Nulla postea at eam, aliquid sanctus praesent ad qui.
-Laudem electram vis ea, omnes ignota sanctus eam ne. Ex praesent efficiendi sit, sea dicit indoctum id. Cum timeam scriptorem cotidieque at. An cum mucius vocent, qui et dicta euripidis disputando, an has modo dicit ceteros. Posse graeco facilis in pri. Labitur expetenda cu his, vix ut vide omnium ornatus, sed eu sale iracundia intellegam.
-Clita nostro alienum has ei, cum probo probatus suavitate ei. Vim corpora iudicabit ea, ea ius libris scripta. Albucius sententiae definitiones his an. Id nec aperiam gloriatur, ad nec singulis deserunt. Eum at agam justo.
-Ei probo habemus dissentiunt nec, id graeco expetenda sed. His ea postulant convenire, te vel aliquid intellegat signiferumque. Ex ius novum iracundia conceptam. Altera gloriatur est at, has ex repudiandae intellegebat. Mei dico apeirian referrentur ex, vitae laboramus qui ad. Quidam voluptaria qui id.</div>
-					</div></div>
+					</div>
+
+				</div>
 				</div>
 
 				<div id="Others" class="tabcontent">
-					<div class="character">
+				<div class="row">
+					<div class="character col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<h2>Mr Fantastic</h2>
 						<div class="photo"><img  src="image\MrFantastic.jpg"/><br/><br/>
 							<label><b>Alter Ego:</b> Reed Richards</label>
-							<label><b>Abelities:</b> Genius-level intellect,extreme superhuman elasticity, malleability, and endurance, resistance to most physical assaults and electricity, virtual immunity to psychic powers
-</label>
+							<label><b>Abelities:</b> Genius-level intellect,extreme superhuman elasticity, malleability, and endurance, resistance to most physical assaults and electricity, virtual immunity to psychic powers</label>
 						</div>
-						<div class="description"><div class="text-box">Possim officiis et vix, doctus euripidis et est. Eu nominavi invidunt eos. Vix quas laboramus id. His et dolorem accusata ocurreret, pro graece mucius dolorem ad. In ius nullam periculis conceptam, no dolore fabulas vel, eos in justo phaedrum. No malis appareat explicari vel, scripta praesent suscipiantur cum in. Eos soleat aliquando in, quo audiam albucius liberavisse ei.
-Cu blandit pericula nec. Iuvaret gloriatur vim id, delicata salutandi hendrerit ius an. Id nam nulla nostro insolens, vis omnes primis ea. Quis dicta omnium usu ei. Velit singulis antiopam sit eu, id quo accusamus interpretaris. Eu cum eros iudico everti, ut veniam nonumy eam.
-Eu graece fastidii luptatum vix, no qui tempor nostrum lobortis, te percipit delicata est. Expetenda euripidis scriptorem te pro, facer iracundia definiebas eu vim. Eos cu epicuri copiosae moderatius. Vim convenire sadipscing no, mea an mutat essent percipitur, stet animal tractatos et sed. Mel ei nulla suscipit.
-Ius percipit indoctum ne, eam justo accommodare ei. Ex constituam liberavisse duo, mel harum aliquam dignissim at. Ut audire perpetua dissentiunt has, nam laudem indoctum ad, semper epicurei eu vis. Cum in nullam ubique, ut habemus vituperatoribus vis.
-Novum labore duo id, nam no nihil denique platonem. Et ullum habemus tractatos qui, possit euripidis pertinacia ut mel, his velit liber oportere ex. Nam splendide omittantur ut, dicat saepe dolore duo in. At iusto pertinacia his, id mei mutat idque dolor. Erat voluptatum voluptatibus duo ut. Ancillae repudiare usu at, usu platonem gubergren eu.
-Elitr constituto est ex. Mei torquatos posidonium eu, cu sed iusto ridens corpora, an eos aliquam laoreet repudiandae. Eu quot latine commodo vix. Duo corrumpit rationibus suscipiantur te. Inani persius in qui, an nec diam minim ludus, in essent mollis accusamus vel.
-Omnium perpetua adversarium ius in. Ut invidunt similique vulputate est. Ubique nusquam ponderum mea ea, dolores gloriatur abhorreant ut est. Ex nec phaedrum gubergren, vitae nostrum cotidieque eu est. Mel probatus volutpat at. Nulla postea at eam, aliquid sanctus praesent ad qui.
-Laudem electram vis ea, omnes ignota sanctus eam ne. Ex praesent efficiendi sit, sea dicit indoctum id. Cum timeam scriptorem cotidieque at. An cum mucius vocent, qui et dicta euripidis disputando, an has modo dicit ceteros. Posse graeco facilis in pri. Labitur expetenda cu his, vix ut vide omnium ornatus, sed eu sale iracundia intellegam.
-Clita nostro alienum has ei, cum probo probatus suavitate ei. Vim corpora iudicabit ea, ea ius libris scripta. Albucius sententiae definitiones his an. Id nec aperiam gloriatur, ad nec singulis deserunt. Eum at agam justo.
-Ei probo habemus dissentiunt nec, id graeco expetenda sed. His ea postulant convenire, te vel aliquid intellegat signiferumque. Ex ius novum iracundia conceptam. Altera gloriatur est at, has ex repudiandae intellegebat. Mei dico apeirian referrentur ex, vitae laboramus qui ad. Quidam voluptaria qui id.</div>
-					</div></div>
+					</div>
+				</div>
 				</div>
 			</div>
+		</div>
 		</div>
 		<footer id="footerid">
 		
@@ -207,7 +166,9 @@ Ei probo habemus dissentiunt nec, id graeco expetenda sed. His ea postulant conv
 			<span>&nbsp;</span><a href="#"><i class="fab fa-twitter"></i></a><span>&nbsp;</span>
 			</div>
 		</footer>      
-		<script>
+		
+	</body>
+	<script>
 			function openPage(pageName,elmnt,color) {
 				var i, tabcontent, tablinks;
 				tabcontent = document.getElementsByClassName("tabcontent");
@@ -223,5 +184,15 @@ Ei probo habemus dissentiunt nec, id graeco expetenda sed. His ea postulant conv
 			}
 			document.getElementById("defaultOpen").click();
 		</script>
+		<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+		
 	</body>
 </html>
