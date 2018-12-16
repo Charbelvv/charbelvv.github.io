@@ -4,17 +4,36 @@
 		<title>Marvel Fandom</title>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link type="text/css" rel="stylesheet" href="css\file.css" media="all"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css\file.css" media="all"/>
+
 	</head>
 	<body >
+			<body >
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="heroes.html">Heroes</a>
+  <a href="vilains.html">Vilains</a>
+  <a href="timeline.html">TimeLine</a>
+  <a href="comingsoon.html">Coming Soon</a>
+  <a href="comicbooks.html">Comic Books</a>
+  <a href="quizz.html">Quizz</a>
+  <a href="contactus.html">Contact Us</a>
+</div>
 		<header id="headerid" >
 			<div id="banner">
+				
 				<div id="logo">
-					<img height="170em" width="170em" src="image\logo1.svg"/>
+					
+					<img  src="image\logo1.svg"/>
+					<div class="sidebtn"><button type="button" class="btn btn-danger sidebtninner" onclick="openNav()"><i class="fas fa-bars"></i></button></div>
 				</div>
-				<div>
+				
+				<div id="slogan">
 					<div>
 					<p><i>
 					&#34;Heroes are made by the path they choose,</i></p></div>
@@ -24,7 +43,7 @@
 			</div>		
 		</header>
 		<div>
-			<ul id="menu">
+			<ul  data-spy="affix" data-offset-top="130" id="menu">
 				<li title="Home">
 					<a href="home.html"><i class="fas fa-home"></i></a>			
 				</li>		
@@ -54,10 +73,42 @@
 				</li>
 			</ul>
 		</div>
-		<div class="content"> 
-			<div id="questionnaire">
-				<p><label>Name :</label></p>
-				<p><input type="text" id="contactName" name="contactName" maxlength="10" autofocus placeholder="Votre Nom" /></p>
+		<div class="container container_add">
+			<h1 style="text-align:center">TEL US EVERYTHING!</h1>
+			<br/>
+			<div class="text-box">
+				<p>
+					Did you enjoy what you've seen? were you content with the first spider-man series? Did you like  black panther for the right reason? Let us know what's on your mind!
+want more privacy? contact us on the address below!
+ 				</p>			
+			</div>
+			<div class="raw everything">
+				<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+					<form id="myform">
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="email">Email:</label>
+						<div class="col-sm-10">
+						<input type="email" class="form-control" id="email" placeholder="example@marvel.com">
+						</div>
+					</div>
+					<br/>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="text">Name:</label>
+						<div class="col-sm-10">
+						<input type="text" class="form-control" id="Name" placeholder="example">
+						</div>
+					</div>
+					<br/>
+					<div class="form-group">
+						<label for="Com">Your Feedback:</label>
+						<textarea class="form-control" id="Com" rows="7" placeholder="(Please don't be hard on us)" ></textarea>
+					</div>
+					<button type="submit" onclick="myfunction()" class="btn btn-danger col-xs-2 col-sm-3 col-md-2 col-lg-2 col-xs-offset-10 col-sm-offset-9 col-md-offset-10 col-lg-offset-10">Submit</button>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<img src="image\captain-america-i-want-you-to-fight-for-freedom-small-steel-sign-210mm-x-150mm-hb--13765-p.jpg" width="100%"/>
+				</div>
+				</form>
 			</div>
 		</div>
 		<footer id="footerid">
@@ -70,4 +121,36 @@
 		</footer>      
 		
 	</body>
+	<script>
+		function myfunction(){
+					
+			var name=document.forms['myform']['Name'].value;
+			var email=document.forms['myform']['email'].value;
+			var text=document.forms['myform']['Com'].value;
+			if(name=="" || name=="example"){
+				window.alert("Who names his kid example?");
+			}
+			else if(email==""){
+				window.alert("You don't have an email?\nWell, Welcome to the 21st century");
+			}
+			else if(text==""){
+				window.alert("I sad don't be hard on us but come on dude!\nSay Something!");
+			}
+			else {
+				window.alert("Thank you for your feedback!\nYou did your part in saving the world, You're a Hero!");
+			}
+		}
+	</script>
+		
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.body.style.backgroundColor = "rgba(0, 0, 0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.backgroundColor = "rgb(239, 240, 242)";
+}
+</script>
 </html>

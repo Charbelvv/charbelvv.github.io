@@ -24,21 +24,21 @@
   <a href="quizz.html">Quizz</a>
   <a href="contactus.html">Contact Us</a>
 </div>
-		<header id="headerid" >
+		<header id="vilain_headerid" >
 			<div id="banner">
 				
 				<div id="logo">
 					
 					<img  src="image\logo1.svg"/>
-					<div class="sidebtn"><button type="button" class="btn btn-danger sidebtninner" onclick="openNav()"><i class="fas fa-bars"></i></button></div>
+					<div class="sidebtn"><button type="button" class="btn btn-primary sidebtninner" onclick="openNav()"><i class="fas fa-bars"></i></button></div>
 				</div>
 				
 				<div id="slogan">
 					<div>
-					<p><i>
-					&#34;Heroes are made by the path they choose,</i></p></div>
-					<div style="text-align:right"><p ><i>Not the powers they are granted with.&#34; &nbsp;</i>
-					</p></div>
+					<i>
+					&#34;You either die a hero,</i></div>
+					<div style="text-align:center"><i>Or live long enough to</i></div><div style="text-align:right"><i>become the vilain...&#34; &nbsp;</i>
+					</div>
 				</div>
 			</div>		
 		</header>
@@ -120,6 +120,7 @@
 
 				<div id="X-Men" class="tabcontent">
 				<div class="row">
+					<div class="character2">
 					<div class="character col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<h2>Apocalyse</h2>
 						<div class="photo"><img src="image\Apocalypse.png"/><br/><br/>
@@ -134,12 +135,15 @@
 							<label><b>Abelities:</b> Magnetism manipulation and generation of magnetic force fields, flight through magnetic fields, helmet shields against telepathic attacks</label>
 						</div>
 					</div>
+					</div>
+					<div class="character2">
 					<div class="character col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<h2>William Stryker</h2>
 						<div class="photo"><img  src="image\William.jpg"/><br/><br/>
 							<label><b>Alter Ego:</b> Logan</label><br/>
 							<label><b>Abelities:</b> Superhuman senses, agility, reflexes, and animal-like attributes, extended longevity via regenerative healing factor, adamantium-plated skeleton, retractable bone claws, skilled hand-to-hand combatant</label>
 						</div>
+					</div>
 					</div>
 
 				</div>
@@ -188,10 +192,12 @@
 		<script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
+  document.body.style.backgroundColor = "rgba(0, 0, 0,0.4)";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+  document.body.style.backgroundColor = "rgb(239, 240, 242)";
 }
 </script>
 		

@@ -4,17 +4,36 @@
 		<title>Marvel Fandom</title>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link type="text/css" rel="stylesheet" href="css\file.css" media="all"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css\file.css" media="all"/>
+
 	</head>
 	<body >
+			<body >
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="heroes.html">Heroes</a>
+  <a href="vilains.html">Vilains</a>
+  <a href="timeline.html">TimeLine</a>
+  <a href="comingsoon.html">Coming Soon</a>
+  <a href="comicbooks.html">Comic Books</a>
+  <a href="quizz.html">Quizz</a>
+  <a href="contactus.html">Contact Us</a>
+</div>
 		<header id="headerid" >
 			<div id="banner">
+				
 				<div id="logo">
-					<img height="170em" width="170em" src="image\logo1.svg"/>
+					
+					<img  src="image\logo1.svg"/>
+					<div class="sidebtn"><button type="button" class="btn btn-danger sidebtninner" onclick="openNav()"><i class="fas fa-bars"></i></button></div>
 				</div>
-				<div>
+				
+				<div id="slogan">
 					<div>
 					<p><i>
 					&#34;Heroes are made by the path they choose,</i></p></div>
@@ -24,7 +43,7 @@
 			</div>		
 		</header>
 		<div>
-			<ul id="menu">
+			<ul  data-spy="affix" data-offset-top="130" id="menu">
 				<li title="Home">
 					<a href="home.html"><i class="fas fa-home"></i></a>			
 				</li>		
@@ -53,7 +72,134 @@
 					<a href="contactus.html"><i class="fas fa-envelope"></i></a>			
 				</li>
 			</ul>
-		</div>	
+		</div>
+		<div class="container container_add">
+			<h1 style="text-align:center">The Timeline</h1>
+			<br/>
+			<div class="text-box">
+				<p>
+					Unlike what you can hear ,there is a clear and logical timeline for the MCU (unlike other superheroes franchies). There you'll see how and maybe understand why they milked spider-man 's story. This will not include every marvel movie ever.
+ 				</p>			
+			</div>
+			<div>
+			<ul class="timeline">
+    <li>
+        <div class="timeline-badge">
+          <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4 style="color:red;">Iron Man.</h4>
+            </div>
+            <div class="timeline-body">
+				<img src="image\iron-man1.jpg"/>
+                <p>Genius, billionaire, playboy and philanthropist Tony Stark, who has inherited the defense contractor Stark Industries from his father, is in war-torn Afghanistan with his friend and military liaison Lieutenant Colonel James Rhodes to demonstrate the new "Jericho" missile. He will be captured there and will have to use his genius to get out of this situation. </p>
+            </div>
+            <div class="timeline-footer">
+                <p class="text-right">2008</p>
+            </div>
+        </div>
+    </li>
+    
+    <li class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4 style="color:green;">The Incredible Hulk.</h4>
+            </div>
+			
+            <div class="timeline-body">
+				<img src="image\the incredible hulk.jpg"/>
+                <p>At Culver University in Virginia, General Thunderbolt Ross meets with Dr. Bruce Banner, the colleague and boyfriend of his daughter Betty, regarding an experiment that Ross claims is meant to make humans immune to gamma radiation. The experiment — part of a World War II-era "super soldier" program that Ross hopes to recreate — fails, and the exposure to gamma radiation causes Banner to transform into the Hulk for brief periods of time, whenever his heart rate rises above 200 beats per minute.</p>
+            </div>
+            <div class="timeline-footer">
+                <p class="text-right">2008</p>
+            </div>
+        </div>
+    </li>
+    
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4 style="color:red;">Iron Man 2.</h4>
+            </div>
+            <div class="timeline-body">
+				<img src="image\iron man2.jpg"/>
+                <p>In Russia, the media covers Tony Stark's disclosure of his identity as Iron Man. Ivan Vanko, whose father Anton Vanko has just died, sees this and begins building a miniature arc reactor similar to Stark's. Six months later,[N 2] Stark is a superstar and uses his Iron Man suit for peaceful means, resisting government pressure to sell his designs. He reinstitutes the Stark Expo to continue his father Howard's legacy.</p>
+            </div>
+            <div class="timeline-footer">
+                <p class="text-right">2010</p>
+            </div>
+        </div>
+    </li>
+    
+    <li class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>Thor.</h4>
+            </div>
+            <div class="timeline-body">
+				<img src="image\Thor1.jpg"/>
+                <p>For Thor's arrogance, Odin strips his son of his godly power and exiles him to Earth as a mortal, accompanied by his hammer Mjölnir, now protected by an enchantment that allows only the worthy to wield it.
+
+Thor lands in New Mexico, where astrophysicist Dr. Jane Foster, her assistant Darcy Lewis, and mentor Dr. Erik Selvig find him. The local populace finds Mjolnir, which S.H.I.E.L.D. agent Phil Coulson soon commandeers before forcibly acquiring Foster's data about the wormhole that delivered Thor to Earth. You know it, He will later be worthy of his powers again anf will face any threat.</p>
+            </div>
+            <div class="timeline-footer">
+                <p class="text-right">2011</p>
+            </div>
+        </div>
+    </li>
+    
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4 style="color:blue;">Captain America: The First Avenger.</h4>
+            </div>
+            <div class="timeline-body">
+				<img src="image\ca1.jpg"/>
+                <p>In the present day, scientists in the Arctic uncover an old, frozen aircraft, it's captain america! We jump than back in time and we discover his history. A young boy thst dreamed od joining the army and than began a supersoldier and the logo of the american during WWII.</p>
+            </div>
+            <div class="timeline-footer">
+                <p class="text-right">2011</p>
+            </div>
+        </div>
+    </li>
+    
+    <li  class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4 style="color:magenta;">Avengers Assemble.</h4>
+            </div>
+            <div class="timeline-body">
+				<img src="image\aa1.jpg"/>
+                <p>The Asgardian Loki encounters the Other, the leader of an extraterrestrial race known as the Chitauri. In exchange for retrieving the Tesseract,[N 2] a powerful energy source of unknown potential, the Other promises Loki an army with which he can subjugate Earth. To defeat him, S.H.E.I.L.D assemble a group of heroes, The Avengers.</p>
+            </div>
+            <div class="timeline-footer primary">
+                <p class="text-right">2012</p>
+            </div>
+        </div>
+    </li>
+    <li class="clearfix no-float"></li>
+</ul>
+
+
+			</div>
+				
+		</div>
 		<footer id="footerid">
 		
 			<div class="vl r">&copy;Copyright </div><div class="vl r"> Contact us : <a href="mailto:marvelfandome@gmail.com">marvelfandome@gmail.com</a> </div><div class="vl "> Follow us on social media : 
@@ -64,4 +210,16 @@
 		</footer>      
 		
 	</body>
+		
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.body.style.backgroundColor = "rgba(0, 0, 0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.backgroundColor = "rgb(239, 240, 242)";
+}
+</script>
 </html>

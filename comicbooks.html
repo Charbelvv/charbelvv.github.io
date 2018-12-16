@@ -4,17 +4,36 @@
 		<title>Marvel Fandom</title>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link type="text/css" rel="stylesheet" href="css\file.css" media="all"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css\file.css" media="all"/>
+
 	</head>
 	<body >
+			<body >
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="heroes.html">Heroes</a>
+  <a href="vilains.html">Vilains</a>
+  <a href="timeline.html">TimeLine</a>
+  <a href="comingsoon.html">Coming Soon</a>
+  <a href="comicbooks.html">Comic Books</a>
+  <a href="quizz.html">Quizz</a>
+  <a href="contactus.html">Contact Us</a>
+</div>
 		<header id="headerid" >
 			<div id="banner">
+				
 				<div id="logo">
-					<img height="170em" width="170em" src="image\logo1.svg"/>
+					
+					<img  src="image\logo1.svg"/>
+					<div class="sidebtn"><button type="button" class="btn btn-danger sidebtninner" onclick="openNav()"><i class="fas fa-bars"></i></button></div>
 				</div>
-				<div>
+				
+				<div id="slogan">
 					<div>
 					<p><i>
 					&#34;Heroes are made by the path they choose,</i></p></div>
@@ -24,7 +43,7 @@
 			</div>		
 		</header>
 		<div>
-			<ul id="menu">
+			<ul  data-spy="affix" data-offset-top="130" id="menu">
 				<li title="Home">
 					<a href="home.html"><i class="fas fa-home"></i></a>			
 				</li>		
@@ -53,7 +72,42 @@
 					<a href="contactus.html"><i class="fas fa-envelope"></i></a>			
 				</li>
 			</ul>
-		</div>	
+		</div>
+		<div class="container container_add">
+			<h1 style="text-align:center">The Comics!</h1>
+			<br/>
+			<div class="text-box">
+				<p>
+					Where it all began. If you're an OG fan you may prefer them to any movies in the series.
+Here you can get some of them for free. Go ahead, the marvel universe is way deeper than the movies!
+ 				</p>			
+			</div>
+			<div class="row comics_container">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 comics">
+					<h3>The Story – Amazing Spider-Man #11 (2018)</h3>
+					<img src="image\Amazing-Spider-Man-11-2018.jpg"/>
+					<div class="story "><div class="text-box"><p>J. JONAH JAMESON has a new job as a shock jock, but is the world ready for a pro-Spider-Man JJJ? More importantly, is Spider-Man ready?</p></div>
+
+				</div>
+					<div class="download"><a href="Comics\Amazing Spider-Man 011 (2019) (Digital) (Zone-Empire).cbr" download><button type="button" class="btn btn-danger">Download Now</button></a></div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 comics">
+					<h3>The Story – Weapon X #27 (2018)</h3>
+					<img src="image\Weapon-X-27-2018.jpg"/>
+					<div class="story "><div class="text-box"><p>Two roads diverged in a blood-soaked wood. For a time, Sabretooth took the one less traveled. In this issue, he pays for it. Everything changes here.</p></div>
+					
+				</div>
+					<div class="download"><a href="Comics\Weapon X 027 (2019) (Digital) (Zone-Empire).cbr" download><button type="button" class="btn btn-danger">Download Now</button></a></div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 comics">
+					<h3>The Story – The Unstoppable Wasp #3 (2018)</h3>
+					<img src="image\The-Unstoppable-Wasp-3-2018.jpg"/>
+					<div class="story "><div class="text-box"><p>What happens when the Unstoppable Wasp decides to take a night off with her mentor to enjoy herself? Well, obviously everything falls apart... </p>
+				</div></div>
+					<div class="download"><a href="Comics\The Unstoppable Wasp 003 (2019) (Digital) (Zone-Empire).cbr" download><button type="button" class="btn btn-danger">Download Now</button></a></div>
+				</div>
+			</div>
+		</div>
 		<footer id="footerid">
 		
 			<div class="vl r">&copy;Copyright </div><div class="vl r"> Contact us : <a href="mailto:marvelfandome@gmail.com">marvelfandome@gmail.com</a> </div><div class="vl "> Follow us on social media : 
@@ -64,4 +118,16 @@
 		</footer>      
 		
 	</body>
+		
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.body.style.backgroundColor = "rgba(0, 0, 0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.backgroundColor = "rgb(239, 240, 242)";
+}
+</script>
 </html>
