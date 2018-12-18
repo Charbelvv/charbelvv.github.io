@@ -12,10 +12,10 @@
 
 	</head>
 	<body >
-			<body >
+			
 		<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="home.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="heroes.html">Heroes</a>
   <a href="vilains.html">Vilains</a>
   <a href="timeline.html">TimeLine</a>
@@ -45,7 +45,7 @@
 		<div>
 			<ul  data-spy="affix" data-offset-top="130" id="menu">
 				<li title="Home">
-					<a href="home.html"><i class="fas fa-home"></i></a>			
+					<a href="index.html"><i class="fas fa-home"></i></a>			
 				</li>		
 				<li title="Characters">
 					<a href="#"><i class="fas fa-users"></i></a> 
@@ -74,7 +74,7 @@
 			</ul>
 		</div>
 		<div class="container container_add">
-			<h1 style="text-align:center">TEL US EVERYTHING!</h1>
+			<h1 style="text-align:center">TELL US EVERYTHING!</h1>
 			<br/>
 			<div class="text-box">
 				<p>
@@ -103,7 +103,7 @@ want more privacy? contact us on the address below!
 						<label for="Com">Your Feedback:</label>
 						<textarea class="form-control" id="Com" rows="7" placeholder="(Please don't be hard on us)" ></textarea>
 					</div>
-					<button type="submit" onclick="myfunction()" class="btn btn-danger col-xs-2 col-sm-3 col-md-2 col-lg-2 col-xs-offset-10 col-sm-offset-9 col-md-offset-10 col-lg-offset-10">Submit</button>
+					<button type="submit" onclick="myfunction()" class="btn btn-danger col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xs-offset-9 col-sm-offset-9 col-md-offset-10 col-lg-offset-10">Submit</button>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 					<img src="image\captain-america-i-want-you-to-fight-for-freedom-small-steel-sign-210mm-x-150mm-hb--13765-p.jpg" width="100%"/>
@@ -124,28 +124,27 @@ want more privacy? contact us on the address below!
 	<script>
 		function myfunction(){
 					
-			var name=document.forms['myform']['Name'].value;
-			var email=document.forms['myform']['email'].value;
-			var text=document.forms['myform']['Com'].value;
-			if(name=="" || name=="example"){
+			var userName=document.forms['myform']['Name'].value;
+			var userEmail=document.forms['myform']['email'].value;
+			var userText=document.forms['myform']['Com'].value;
+			if(userName=="" || userName=="example" || userName=="Example"){
 				window.alert("Who names his kid example?");
 			}
-			else if(email==""){
+			else if(userEmail==""){
 				window.alert("You don't have an email?\nWell, Welcome to the 21st century");
 			}
-			else if(text==""){
+			else if(userText==""){
 				window.alert("I sad don't be hard on us but come on dude!\nSay Something!");
 			}
 			else {
 				window.alert("Thank you for your feedback!\nYou did your part in saving the world, You're a Hero!");
 			}
 		}
-	</script>
-		
-	<script>
+	
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.body.style.backgroundColor = "rgba(0, 0, 0,0.4)";
+  
 }
 
 function closeNav() {

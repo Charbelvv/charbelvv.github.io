@@ -12,10 +12,10 @@
 
 	</head>
 	<body >
-			<body >
+			<div >
 		<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="home.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="heroes.html">Heroes</a>
   <a href="vilains.html">Vilains</a>
   <a href="timeline.html">TimeLine</a>
@@ -44,7 +44,7 @@
 		</header>
 			<ul  data-spy="affix" data-offset-top="130" id="menu">
 				<li title="Home">
-					<a href="home.html"><i class="fas fa-home"></i></a>			
+					<a href="index.html"><i class="fas fa-home"></i></a>		
 				</li>		
 				<li title="Characters">
 					<a href="#"><i class="fas fa-users"></i></a> 
@@ -158,6 +158,45 @@
 			</div>
 		</div>
 		</div>
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						
+						<h4 class="modal-title">Searching for me?</h4>
+					</div>
+					<div class="modal-body row">
+						<div style="float:left;width:30%"><p>&nbsp;Come to daddy! <br/>&nbsp;Click <a href="deadpool.html">Here !</a></p></div>
+						<div style="float:right;width:30%"><img src="image\deadpoolHappy.jpg" class="deadpoolLogo"/></div>
+					</div>
+						<div class="modal-footer" style="clear:both">
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Close</button>
+						</div>
+				</div>
+      
+			</div>
+		</div>
+		<div class="modal fade" id="myModal2" role="dialog">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						
+						<h4 class="modal-title">Are you sure?</h4>
+					</div>
+					<div class="modal-body row">
+						<div style="float:left;width:30%"><p>&nbsp;We could have fun...<br/>&nbsp;Your loss anw.</p></div>
+						<div style="float:right;width:30%"><img src="image\deadpoollogo.jpeg" class="deadpoolLogo"/></div>
+					</div>
+						<div class="modal-footer" style="clear:both">
+							<a href="deadpool.html"><button style="float:left" type="button" class="btn btn-danger">No</button></a>
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Yes(this page will never be the same)</button>
+						</div>
+				</div>
+      
+			</div>
+		</div>
 		<footer id="footerid">
 		
 			<div class="vl r">&copy;Copyright </div><div class="vl r"> Contact us : <a href="mailto:marvelfandome@gmail.com">marvelfandome@gmail.com</a> </div><div class="vl "> Follow us on social media : 
@@ -183,8 +222,7 @@
 				elmnt.style.backgroundColor = color;
 			}
 			document.getElementById("defaultOpen").click();
-		</script>
-		<script>
+		
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.body.style.backgroundColor = "rgba(0, 0, 0,0.4)";
@@ -194,6 +232,11 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.body.style.backgroundColor = "rgb(239, 240, 242)";
 }
+$(document).ready(function() {
+    setTimeout(function() {
+      $('#myModal').modal('show');
+    }, 15000); 
+});
 </script>
 		
 	</body>

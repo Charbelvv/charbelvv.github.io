@@ -12,10 +12,10 @@
 
 	</head>
 	<body >
-			<body >
+			
 		<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="home.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="heroes.html">Heroes</a>
   <a href="vilains.html">Vilains</a>
   <a href="timeline.html">TimeLine</a>
@@ -45,7 +45,7 @@
 		<div>
 			<ul  data-spy="affix" data-offset-top="130" id="menu">
 				<li title="Home">
-					<a href="home.html"><i class="fas fa-home"></i></a>			
+					<a href="index.html"><i class="fas fa-home"></i></a>		
 				</li>		
 				<li title="Characters">
 					<a href="#"><i class="fas fa-users"></i></a> 
@@ -339,37 +339,37 @@
 	<script>
 		function myfunction(){
 			var i=1;
-			var s=0;
-			var c;
-			var f;
-			var val;
+			var userScore=0;
+			var questionClass;
+			var formClass;
+			var questionVal;
 			while(i<21){
-				c="q" + i;
-				f="Question" + i;
-				val=document.forms[f][c].value;
-				if(val==1){
-					s++;
+				questionClass="q" + i;
+				formClass="Question" + i;
+				questionVal=document.forms[formClass][questionClass].value;
+				if(questionVal==1){
+					userScore++;
 				}
 				i++;
 			}
-			if(s<10){
-				window.alert("Your score is " + s + " .\nYou have a lot of work to do...");
+			if(userScore<10){
+				window.alert("Your score is " + userScore + "/20.\nYou have a lot of work to do...");
 			}
-			else if(s<15){
-				window.alert("Your score is " + s + " .\nWell done, you have some potential.");
+			else if(userScore<15){
+				window.alert("Your score is " + userScore + "/20.\nWell done, you have some potential.");
 			}
-			else if(s<19){
-				window.alert("Your score is " + s + " .\nNiiiiiiiiiiiiiiiice!");
+			else if(userScore<20){
+				window.alert("Your score is " + userScore + "/20.\nNiiiiiiiiiiiiiiiice!");
 			}
 			else{
-				window.alert("Your score is " + s + " .\nI have nothing to teach you mate, You're a veteran of the MCU!");
+				window.alert("Your score is " + userScore + "/20.\nI have nothing to teach you mate, You're a veteran of the MCU!");
 			}
 		}
-	</script>	
-	<script>
+	
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.body.style.backgroundColor = "rgba(0, 0, 0,0.4)";
+  
 }
 
 function closeNav() {
